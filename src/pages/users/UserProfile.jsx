@@ -26,7 +26,7 @@ const UserProfile = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       {showPopup && (
         <CustomModal
           id={id}

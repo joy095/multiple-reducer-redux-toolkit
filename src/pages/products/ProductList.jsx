@@ -31,7 +31,7 @@ const ProductList = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       {showPopup && (
         <CustomModal
           id={id}
@@ -40,32 +40,6 @@ const ProductList = () => {
         />
       )}
       <h2>All data</h2>
-      <input
-        className="form-check-input"
-        name="gender"
-        checked={radioData === ""}
-        type="radio"
-        onChange={(e) => setRadioData("")}
-      />
-      <label className="form-check-label">All</label>
-      <input
-        className="form-check-input"
-        name="gender"
-        checked={radioData === "Male"}
-        value="Male"
-        type="radio"
-        onChange={(e) => setRadioData(e.target.value)}
-      />
-      <label className="form-check-label">Male</label>
-      <input
-        className="form-check-input"
-        name="gender"
-        value="Female"
-        checked={radioData === "Female"}
-        type="radio"
-        onChange={(e) => setRadioData(e.target.value)}
-      />
-      <label className="form-check-label">Female</label>
 
       <div>
         {products.products &&
